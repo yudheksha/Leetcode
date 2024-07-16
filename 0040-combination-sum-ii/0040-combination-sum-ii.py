@@ -12,7 +12,7 @@ class Solution:
                     continue
                     
                 if candidates[i]>target:
-                    break
+                    return
                     
                 combination.append(candidates[i])
                 backtrack(i+1,candidates,target-candidates[i],combination,result)
