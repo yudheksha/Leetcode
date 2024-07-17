@@ -15,7 +15,7 @@ class Solution:
             for a,b in trust:
                 if a == winner:
                     present = True
-            if not present:
+            if present==False:
                 return winner
             else:
                 return -1
