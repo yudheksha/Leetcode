@@ -7,7 +7,7 @@ public:
         bool res = true;
         for(auto x: ve[s]){
             if(x!=p){
-                if(vis[x])res = false;
+                if(vis[x])return false;
                 else {
                     res &= dfs(x,s);
                 }
